@@ -29,7 +29,7 @@ class PlayTimeCommand extends Command
     }
 
     /**
-     * @throws &\Exception
+     * @throws \Exception
      */
     public function execute(CommandSender $sender, string $commandLabel, array $args): void
     {
