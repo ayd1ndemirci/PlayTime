@@ -33,7 +33,7 @@ class Main extends PluginBase
     protected function onEnable(): void
     {
         $this->getLogger()->info("PlayTime avtice - @ayd1ndemirci");
-        $this->sqlite = new SQLite($this);
+        $this->sqlite = new SQLite();
         $this->getServer()->getPluginManager()->registerEvents(new PlayerListener(), $this);
         $this->getServer()->getCommandMap()->register("playtime", new PlayTimeCommand());
     }
