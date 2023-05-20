@@ -20,7 +20,7 @@ class SQLite
 {
     public SQLite3 $playtime;
 
-    public function __construct(Main $main)
+    public function __construct()
     {
         $this->playtime = new SQLite3(Main::$main->getDataFolder() . "playtime.db");
         $this->playtime->exec("CREATE TABLE IF NOT EXISTS playtime(playerName String, playTime INT)");
